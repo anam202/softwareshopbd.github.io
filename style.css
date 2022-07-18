@@ -1,0 +1,303 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;300;500;700&family=Roboto:wght@100;300;400&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: poppins;
+    font-size: 30px;
+    font-weight: 750;
+
+}
+/* Global css */
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+.global-button{
+    width: 100px;
+    height: 35px;
+    background-color: black;
+    color:white
+}
+.global-section{
+   padding: 3rem 0; 
+   text-align: center;
+}
+.global-heading{
+    font-size: 35px;
+    text-align: center;
+}
+.global-header-p{
+    color: #7b7b7b;
+}
+
+
+/* This is Header  */
+header{
+    background-color: black;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 5rem;    
+}
+/* This is Menubar Start  */
+.main-menu{
+    position: absolute;
+    top: 6%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 35%;
+    }
+ul li{
+        display: inline;
+        text-align: center;
+    }
+    
+    a{
+        display: inline-block;
+        width: 20%;
+        text-decoration: none;
+        color: rgb(251, 254, 255);
+    }
+    
+    hr{
+        height: 50px;
+        width: 20%;
+        margin: -42px 0;
+        background: linear-gradient(to right, #028ae5 0%,#fd6fd0 100%);
+        border: none;
+        border-radius: 50px;
+        transition: .5s ease-in-out;
+    }
+    
+.two:hover ~ hr{
+        margin-left: 20%;  
+    }
+    .three:hover ~ hr{
+        margin-left: 40%;  
+    }
+.four:hover ~ hr{
+        margin-left: 60%;  
+    }
+.five:hover ~ hr{
+        margin-left: 80%;  
+    }
+/* This is Menubar End  */
+
+/* First section */
+.first-section{
+    background-image: url(./Images/darts.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    padding: 5rem 0;
+    text-align: center;
+}
+.first-section p{
+    font-size: 1rem; 
+}
+.first-section h2{
+    font-size: 5rem;
+    margin: 10px 0;
+}
+/* First section End */
+
+/* Product Table Start  */
+.table{
+    width: 100%;
+}
+.table-header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 20px;
+    background-color: rgb(240,240,240);
+}
+.table-header p{
+    color: #000000;
+}
+button{
+    outline: none;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    padding: 12px;
+    color: #ffffff;
+}
+td button:nth-child(1){
+    background-color: #0298cf;
+}
+td button:nth-child(2){
+    background-color: #f80000;
+}
+
+.add-new{
+    padding: 10px 20px;
+    color: #ffffff;
+    background-color: #0298cf;
+}
+input{
+    padding: 10px 20px;
+    margin: 0 10px;
+    outline: none;
+    border: 1px solid;
+    border-radius: 6px;
+    color: #0298cf;
+}
+::placeholder{
+    color: ;
+}
+::-webkit-scrollbar{
+    height: 5px; width: 5px;
+}
+::-webkit-scrollbar-track{
+    box-shadow: inset 0 0 0 6px rgba(0,0,0,0.3);
+}
+::-webkit-scrollbar-thumb{
+    box-shadow: inset 0 0 0 6px rgba(0,0,0,0.3);
+
+}
+.table-section{
+    height: 500px;
+    overflow: auto;
+    min-width: 1000px;
+}    
+table{
+    width: 100%;
+    table-layout: fixed;
+    min-width: 900px;
+    border-collapse: collapse;
+}
+thead th{
+    position: sticky;
+    top: 0;
+    background-color: #f6f9fc;
+    color: #8493a5;
+    font-size: 15px;
+}
+th, td{
+    border-bottom: 1px solid #dddddd;
+    padding: 10px 20px;
+    word-break: break-all;
+    text-align: center;
+    border: .5px solid #ced0d2;
+    font-size: 20px;
+}
+td img{
+    height: 60px; width: 60px;
+    object-fit: cover;
+    border-radius: 15px;
+    border: 3px solid #ced0d2;
+}
+tr:hover td{
+    color: #0298cf;
+    cursor: pointer;
+    background-color: #f6f9fc;
+}
+.pagination{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding: 10px 20px;
+    background-color: #8493a5;
+}
+.pagination div{
+    padding: 10px;
+    border: 2px solid #d5d0d0;
+    height: 50px;
+    width: 50px;
+    border-radius: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #0298cf;
+    color: #ffffff;
+    box-shadow: 0px 0px 4px rgba(0,0,0,0.75);
+    margin: 0 5px;
+    cursor: pointer;
+}
+/* Product Table End  */
+
+/* Second Section about  */
+.about-main-div{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 0;
+}
+.about-sub-div{
+    width: 400px ;
+
+}
+.about-sub-div h2{
+    font-size: 35px;
+    align-items: center;
+}
+.about-sub-div p{
+    color:#7b7b7b
+    
+}
+
+/* Services Section  */
+.grid-container{
+display: grid;
+grid-template-columns: auto auto auto;
+}
+.grid-single-item{
+    padding: 50px;
+    text-align: center;
+}
+.grid-single-item h2{
+    margin: 15px 0;
+}
+
+.custom-icon-size{
+    font-size: 45px;
+}
+
+/* Work Section  */
+
+.work-single-img{
+    width: 350px;
+}
+/* Contact Me */
+.contact-heading{
+    font-size: 55px;
+    text-align: center;
+}
+form{
+    margin-left: 47rem;
+    margin-top: 25px;
+}
+form input{
+    width: 410px;
+    height: 20px;
+    margin-top: 10px;
+}
+
+form textarea{
+    width: 410px;
+}
+.submit-btn{
+    width: 150px;
+    height: 35px;
+    background-color:black;
+    margin-top: 5px;
+    margin-bottom: 5px;
+    color: white;
+}
+footer{
+    background-color: #7b7b7b;
+    color: white;
+    height: 3rem;
+    text-align: center;
+}
+footer p{
+    padding-top: 15px;
+}
